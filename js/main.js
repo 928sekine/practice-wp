@@ -21,6 +21,14 @@ const swiper = new Swiper(".swiper", {
     }
   }
 });
+// 一番上へ戻るボタン
+const topBtn = document.getElementById("top-button");
+topBtn.addEventListener("click", () => { 
+  window.scroll({
+    top: 0,
+    behavior: "smooth",
+  })
+});
 
 // スムーズなスクロール
 const smoothScrollTrigger = document.querySelectorAll('a[href^="#"]');
