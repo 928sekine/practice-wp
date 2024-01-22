@@ -1,0 +1,969 @@
+/* ------------------------------ */
+/* リセットCSS */
+/* ------------------------------ */
+/*! destyle.css v4.0.0 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+
+/* Reset box-model and set borders */
+/* ============================================ */
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+}
+
+/* Document */
+/* ============================================ */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Remove gray overlay on links for iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -webkit-tap-highlight-color: transparent; /* 3*/
+}
+
+/* Sections */
+/* ============================================ */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/* Vertical rhythm */
+/* ============================================ */
+
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0;
+}
+
+/* Headings */
+/* ============================================ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+/* Lists (enumeration) */
+/* ============================================ */
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Lists (definition) */
+/* ============================================ */
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* Grouping content */
+/* ============================================ */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+  border-top-width: 1px;
+  margin: 0;
+  clear: both;
+  color: inherit;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
+}
+
+address {
+  font-style: inherit;
+}
+
+/* Text-level semantics */
+/* ============================================ */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Replaced content */
+/* ============================================ */
+
+/**
+ * Prevent vertical alignment issues.
+ */
+
+svg,
+img,
+embed,
+object,
+iframe {
+  vertical-align: bottom;
+}
+
+/* Forms */
+/* ============================================ */
+
+/**
+ * Reset form fields to make them styleable.
+ * 1. Make form elements stylable across systems iOS especially.
+ * 2. Inherit text-transform from parent.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none; /* 1 */
+  appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  text-align: inherit;
+  text-transform: inherit; /* 2 */
+}
+
+/**
+ * Correct cursors for clickable elements.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  cursor: pointer;
+}
+
+button:disabled,
+[type="button"]:disabled,
+[type="reset"]:disabled,
+[type="submit"]:disabled {
+  cursor: default;
+}
+
+/**
+ * Improve outlines for Firefox and unify style with input elements & buttons.
+ */
+
+:-moz-focusring {
+  outline: auto;
+}
+
+select:disabled {
+  opacity: inherit;
+}
+
+/**
+ * Remove padding
+ */
+
+option {
+  padding: 0;
+}
+
+/**
+ * Reset to invisible
+ */
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  outline-offset: -2px; /* 1 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Fix font inheritance.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/**
+ * Fix appearance for Firefox
+ */
+[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/**
+ * Clickable labels
+ */
+
+label[for] {
+  cursor: pointer;
+}
+
+/* Interactive */
+/* ============================================ */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/*
+ * Remove outline for editable content.
+ */
+
+[contenteditable]:focus {
+  outline: auto;
+}
+
+/* Tables */
+/* ============================================ */
+
+/**
+1. Correct table border color inheritance in all Chrome and Safari.
+*/
+
+table {
+  border-color: inherit; /* 1 */
+  border-collapse: collapse;
+}
+
+caption {
+  text-align: left;
+}
+
+td,
+th {
+  vertical-align: top;
+  padding: 0;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+}
+
+/* ------------------------------ */
+/* カスタムプロパティ */
+/* ------------------------------ */
+/* カラー */
+:root {
+  --color-bg-primary: #f7f7f7;
+  --color-bg-green: #daeadc;
+  --color-bg-deep-green: #296e72;
+  --color-bg-white: #ffffff;
+  --color-font-primary: #294052;
+  --color-font-black: #333;
+  --color-font-white: #fff;
+  --color-font-deep-green: #296e72;
+}
+
+/* コンテナ幅 */
+:root {
+  --width-content: 1080px;
+}
+
+/* フォント */
+:root {
+  --font-family-base: "Zen Kaku Gothic New", sans-serif;
+}
+
+// 基本のline-height
+:root {
+  --line-height-base: 1.8;
+}
+
+// 画面幅
+:root {
+  --width-content-max: 1366px;
+  --width-content: 1080px;
+  --width-content-small: 920px;
+}
+
+// ミックスインここから
+@mixin lineHeightSpaceFill($line-height) {
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+  }
+  &::before {
+    margin-top: calc((1 - #{$line-height}) * 0.5em);
+  }
+  &::after {
+    margin-bottom: calc((1 - #{$line-height}) * 0.5em);
+  }
+}
+// ミックスインここまで
+
+/* -------------------------
+全体共通のスタイル
+------------------------- */
+
+body {
+  font-family: var(--font-family-base);
+  background-color: var(--color-bg-primary);
+  font-size: 14px;
+  line-height: var(--line-height-base);
+  letter-spacing: 0.08em;
+}
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* -------------------------
+コンテナの幅、余白
+------------------------- */
+.l-container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: var(--width-content);
+}
+
+.l-container-max {
+  width: 100%;
+  margin: 0 auto;
+  max-width: var(--width-content);
+}
+
+// --------------------------
+// ボタン
+// --------------------------
+
+// 緑
+.c-button1 {
+  max-width: 260px;
+  margin: 0 auto;
+  height: 55px;
+  background-color: var(--color-bg-deep-green);
+  color: var(--color-font-white);
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  @include lineHeightSpaceFill(1);
+  font-weight: 600;
+  text-align: center;
+  display: inline-flex;
+  letter-spacing: 0.1;
+  padding: 19.5px auto;
+  display: grid;
+  place-items: center;
+}
+.c-button1-small {
+  max-width: 200px;
+  margin: 0 auto;
+  height: 40px;
+  background-color: var(--color-bg-deep-green);
+  color: var(--color-font-white);
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  @include lineHeightSpaceFill(1);
+  font-weight: 600;
+  text-align: center;
+  display: inline-flex;
+  letter-spacing: 0.1;
+  padding: 19.5px auto;
+  display: grid;
+  place-items: center;
+  border-radius: 30px;
+}
+
+// --------------------------
+// テキスト
+// --------------------------
+.c-base-text {
+  font-family: var(--font-family-base);
+  @include lineHeightSpaceFill(1.5);
+  line-height: 1.5;
+  font-size: 16px;
+  letter-spacing: 0.08em;
+  font-weight: 400;
+  text-align: left;
+}
+
+// --------------------------
+// 見出し
+// --------------------------
+
+.c-title-level2 {
+  color: var(--color-font-black);
+  font-family: var(--font-family-base);
+  @include lineHeightSpaceFill(1.5);
+  line-height: 1.5;
+  letter-spacing: 0.08em;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .c-title-level2 {
+    font-size: 30px;
+  }
+}
+
+.c-title-level3 {
+  color: var(--color-font-black);
+  font-family: var(--font-family-base);
+  @include lineHeightSpaceFill(1.5);
+  line-height: 1.5;
+  letter-spacing: 0.08em;
+  font-size: 20px;
+  font-weight: 700;
+  span {
+    display: block;
+  }
+}
+// @media screen and (min-width: 768px) {
+//   .c-title-level3 {
+//     font-size: 24px;
+//   }
+// }
+
+// --------------------------
+//ヘッダー
+// --------------------------
+
+.header-inner {
+  height: 60px;
+  background-color: var(--color-bg-green);
+  width: 100%;
+
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// --------------------------
+//ピックアップ
+// --------------------------
+.top-pickup {
+  background-color: var(--color-bg-white);
+  padding-bottom: 30px;
+}
+.top-pickup-inner {
+  padding: 30px 0;
+  position: relative;
+  // width: min(70%, 500px);
+  // margin-inline: auto;
+}
+@media screen and (min-width: 768px) {
+  .top-pickup-inner {
+    padding: 60px 0;
+  }
+}
+.top-pickup-swiper-slide {
+  position: relative;
+}
+.c-top-category {
+  position: absolute;
+  font-size: 16px;
+  left: 0;
+  top: 0;
+  color: var(--color-font-white);
+  background-color: var(--color-bg-deep-green);
+  font-family: var(--font-family-base);
+  @include lineHeightSpaceFill(1.5);
+  line-height: 1.5;
+  letter-spacing: 0.08em;
+  font-weight: 400;
+  padding: 6px 16px;
+  text-align: center;
+}
+// ドット
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  margin: 0 10px !important;
+  background-color: var(--color-bg-deep-green);
+  border-radius: 50%;
+}
+// ドットの位置調整
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: -5px;
+}
+// --------------------------
+//メイン
+// --------------------------
+@media screen and (min-width: 768px) {
+  .top-main {
+    display: flex;
+    align-items: flex-start;
+    padding: 60px 0;
+  }
+}
+
+// --------------------------
+//記事一覧
+// --------------------------
+.top-main-content {
+  background-color: var(--color-bg-primary);
+}
+@media screen and (min-width: 768px) {
+  .top-main-content {
+    width: 70%;
+  }
+}
+
+.top-main-content-inner {
+  padding: 30px 0;
+}
+@media screen and (min-width: 768px) {
+  .top-main-content-inner {
+    padding: 0;
+    margin-top: 0;
+  }
+}
+
+.top-main-content-title-flex {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.top-main-content-title {
+  margin-left: 15px;
+}
+
+.top-main-content-title-circle::before {
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+  background-color: var(--color-bg-deep-green);
+  border-radius: 50%;
+  color: var(--color-font-white);
+  font: var(--fa-font-solid);
+  content: "\f2e7";
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .top-main-content-title-circle::before {
+    width: 80px;
+    height: 80px;
+    font-size: 30px;
+  }
+}
+
+// 記事単体
+.top-main-content-item {
+  background-color: var(--color-bg-white);
+  padding: 15px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .top-main-content-item {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+@media screen and (min-width: 768px) {
+  .top-main-content-image-wrap {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .top-main-content-text-wrap {
+    width: 50%;
+    padding-left: 15px;
+  }
+}
+.top-main-content-item:last-child {
+  margin-bottom: 0;
+}
+.top-main-content-thumbnail {
+  margin-bottom: 15px;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .top-main-content-thumbnail {
+    margin-bottom: 0;
+  }
+}
+.top-main-content-date {
+  font-family: var(--font-family-base);
+  @include lineHeightSpaceFill(1.5);
+  line-height: 1.5;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  font-weight: 400;
+  text-align: left;
+}
+.top-main-content-item-title {
+  color: var(--color-font-deep-green);
+}
+@media screen and (min-width: 768px) {
+  .top-main-content-item-title {
+    margin-bottom: 15px;
+  }
+}
+.top-main-content-item-text {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .top-main-content-item-text {
+    display: block;
+  }
+}
+
+// --------------------------
+//ページネーション
+// --------------------------
+.top-pagination {
+  max-width: 250px;
+  margin: 0 auto;
+}
+// --------------------------
+//サイドバー
+// --------------------------
+.top-aside {
+  padding: 30px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .top-aside {
+    width: 30%;
+    padding: 0;
+  }
+}
+.top-aside-item {
+  margin-bottom: 30px;
+}
+.top-aside-name {
+  font-family: var(--font-family-base);
+  @include lineHeightSpaceFill(1.5);
+  line-height: 1.5;
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  text-align: left;
+  background-color: var(--color-bg-green);
+  padding: 15px 8px;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .top-aside-name {
+    font-size: 20px;
+  }
+}
+
+// 人気記事
+
+.top-aside-popular-articles-item {
+  padding: 15px 15px 15px 0;
+  border-bottom: solid 1px var(--color-font-black);
+}
+
+.top-aside-date {
+  font-family: var(--font-family-base);
+  @include lineHeightSpaceFill(1.5);
+  line-height: 1.5;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.top-aside-article-title {
+  font-family: var(--font-family-base);
+  @include lineHeightSpaceFill(1.5);
+  line-height: 1.5;
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  text-align: left;
+}
+// カテゴリー
+
+.top-aside-category-link {
+  text-decoration: underline;
+  display: block;
+  margin-bottom: 15px;
+}
+
+// アバウト
+.top-aside-about {
+  text-align: center;
+}
+.top-aside-about-text {
+  margin: 15px 0;
+}
+.top-aside-about-image {
+  border-radius: 50%;
+}
+// --------------------------
+//フッター
+// --------------------------
+.footer {
+  background-color: var(--color-bg-green);
+}
+.footer-inner {
+  padding: 30px 0;
+}
+@media screen and (min-width: 768px) {
+  .footer-inner-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.footer-instagram {
+  position: relative;
+  margin-top: 15px;
+  padding-left: 40px;
+}
+.footer-instagram-link {
+  color: var(--color-bg-deep-green);
+  font-weight: 700;
+}
+.footer-instagram-link::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url("/img/Instagram_icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.footer-link-list {
+  padding: 30px 0;
+}
+@media screen and (min-width: 768px) {
+  .footer-link-list {
+    padding: 0;
+  }
+}
+.footer-link-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .footer-link-item {
+    align-items: flex-start;
+  }
+}
+.footer-link-text {
+  margin-bottom: 10px;
+  font-family: var(--font-family-base);
+  @include lineHeightSpaceFill(1.5);
+  line-height: 1.5;
+  font-size: 16px;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  text-align: center;
+  color: var(--color-font-black);
+}
+.footer-link-text:last-child {
+  margin-bottom: 0;
+}
+.footer-address {
+  margin-top: 15px;
+}
+@media screen and (min-width: 768px) {
+  .footer-address {
+    text-align: right;
+  }
+}
+.footer-copyright {
+  font-family: var(--font-family-base);
+  @include lineHeightSpaceFill(1.5);
+  line-height: 1.5;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  font-weight: 400;
+  text-align: center;
+}
+.footer-contact {
+  margin-bottom: 30px;
+}
