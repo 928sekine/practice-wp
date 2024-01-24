@@ -1,4 +1,8 @@
 @charset "UTF-8";
+/*
+Theme Name: あきおかあるき
+*/
+
 /* ------------------------------ */
 /* リセットCSS */
 /* ------------------------------ */
@@ -484,7 +488,7 @@ img {
 }
 
 .c-button1-small {
-  width: 200px;
+  max-width: 200px;
   margin: 0 auto;
   height: 40px;
   background-image: linear-gradient(
@@ -500,9 +504,10 @@ img {
   line-height: 1;
   font-weight: 400;
   text-align: center;
-  display: block;
+  display: inline-flex;
   letter-spacing: 0.1;
   padding: 19.5px auto;
+  display: grid;
   place-items: center;
   border-radius: 30px;
 }
@@ -665,7 +670,7 @@ img {
   width: 15px;
   height: 15px;
   margin: 0 10px !important;
-  background-color: var(--color-bg-deep-green) !important;
+  background-color: var(--color-bg-deep-green);
   border-radius: 50%;
 }
 
@@ -759,8 +764,7 @@ img {
     font-size: 30px;
   }
 }
-.top-main-content-item,
-.single-main-content-item {
+.top-main-content-item {
   background-color: var(--color-bg-white);
   padding: 15px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -774,11 +778,6 @@ img {
   }
 }
 @media screen and (min-width: 768px) {
-  .single-main-content-item {
-    display: block;
-  }
-}
-@media screen and (min-width: 768px) {
   .top-main-content-image-wrap {
     width: 50%;
   }
@@ -789,9 +788,9 @@ img {
     padding-left: 15px;
   }
 }
-/* .top-main-content-item:last-child {
+.top-main-content-item:last-child {
   margin-bottom: 0;
-} */
+}
 
 .top-main-content-thumbnail {
   margin-bottom: 15px;
@@ -842,32 +841,6 @@ img {
   .top-main-content-item-text {
     display: block;
   }
-}
-.single-main-content-item-shop-detail {
-  margin-top: 30px;
-}
-
-.single-main-content-item-shop-title {
-  color: var(--color-font-black);
-  font-family: var(--font-family-base);
-  line-height: 1.5;
-  text-align: center;
-  letter-spacing: 0.08em;
-  font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 15px;
-}
-.single-main-content-item-shop-name {
-  margin-bottom: 8px;
-  color: var(--color-font-black);
-  font-family: var(--font-family-base);
-  line-height: 1.5;
-  letter-spacing: 0.08em;
-  font-size: 20px;
-  font-weight: 700;
-}
-.single-main-content-shop-label {
-  border-bottom: solid 1px var(--color-bg-deep-green);
 }
 .top-pagination {
   max-width: 250px;
@@ -985,16 +958,13 @@ img {
 .top-aside-about-image {
   border-radius: 50%;
 }
+
 .aside-search {
   position: relative;
   margin-bottom: 60px;
 }
-.aside-search-input {
-  border: 1px solid var(--color-bg-deep-green);
-  background-color: var(--color-bg-white);
-  width: 100%;
-  padding: 8px 0;
-  margin-bottom: 15px;
+input[type="text"] {
+  border: 1px solid black;
 }
 
 .footer {

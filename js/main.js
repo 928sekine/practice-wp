@@ -2,10 +2,10 @@
 const swiper = new Swiper(".swiper", {
   loop: true,
   speed: 1000,
-  // autoplay: {
-  //   // 自動再生
-  //   delay: 2000, // 2秒後に次のスライド
-  // },
+  autoplay: {
+    // 自動再生
+    delay: 2000, // 2秒後に次のスライド
+  },
    pagination: {
             el: ".swiper-pagination",
             clickable: true,

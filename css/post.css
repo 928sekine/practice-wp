@@ -1,0 +1,44 @@
+.single-main-content-item h2 {
+  color: var(--color-font-black);
+  font-family: var(--font-family-base);
+  line-height: 1.5;
+  letter-spacing: 0.08em;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 30px 0 15px 0;
+  padding: 6px;
+  border-bottom: 3px solid var(--color-bg-deep-green);
+  background-color: var(--color-bg-green);
+}
+.single-main-content-item h3 {
+  color: var(--color-font-black);
+  font-family: var(--font-family-base);
+  line-height: 1.5;
+  letter-spacing: 0.08em;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-left: 6px;
+  margin: 30px 0 15px 0;
+
+  border-left: 2px solid var(--color-bg-deep-green);
+}
+.single-main-content-item p {
+  font-family: var(--font-family-base);
+  line-height: 1.5;
+  font-size: 16px;
+  letter-spacing: 0.08em;
+  font-weight: 400;
+  text-align: left;
+  margin: 8px 0;
+}
+.single-main-content-item-title {
+  color: var(--color-font-black);
+  font-family: var(--font-family-base);
+  line-height: 1.5;
+  letter-spacing: 0.08em;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
